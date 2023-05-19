@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #0073aa;
+}
+
+.formdesign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 21px -7px var(--primary-color);
+  padding: 0px 36px;
+  width: 60vw;
+  margin: 120px auto;
+}
+
+.formimage {
+  /* background-image: url("assets/images/loan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  height: 50vh;
+  width: 30vw;
+  margin: 50px 50px 50px 0px;
+}
+
+.formbtn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.formbtn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  transform: scale(1.1);
+  border: 1px solid var(--primary-color);
+}
+
+.showhidepass {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+input {
+  height: 100% !important;
+  width: 100% !important;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 10px 42px;
+  resize: none;
+  margin-bottom: 18px;
+}
+
+.icons {
+  position: relative;
+  bottom: -36px;
+  right: -8px;
+  color: gray;
+  padding: 5px;
+}
+
+.lastnameemailicons {
+  position: relative;
+  bottom: -34px;
+  right: -5px;
+  color: gray;
+  padding: 5px;
+}
+.passwordicons {
+  position: relative;
+  bottom: -35px;
+  right: -6px;
+  color: grey;
+  padding: 5px;
+}
+
+.firstname-label,
+.lastname-label {
+  position: relative;
+  right: -39px;
+  bottom: 51px;
+}
+
+.email-label {
+  position: relative;
+  right: -39px;
+  bottom: 54px;
+}
+
+.password-label {
+  position: relative;
+  bottom: 53px;
+  left: 38px;
+}
+
+.form-floating {
+  margin: -30px auto;
+}
+
+input:focus ~ .password-label,
+input:valid ~ .password-label {
+  position: relative;
+  bottom: 88px !important;
+  transition: all 0.4s ease;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+input:focus ~ .firstname-label,
+input:valid ~ .firstname-label {
+  position: relative;
+  bottom: 90px;
+  transition: all 0.4s ease;
+}
+
+input:focus ~ .lastname-label,
+input:valid ~ .lastname-label {
+  position: relative !important;
+  bottom: 90px !important;
+  transition: all 0.4s ease;
+}
+
+input[type="email"]:focus ~ .email-label,
+input[type="email"]:valid ~ .email-label {
+  position: relative;
+  bottom: 90px !important;
+  transition: all 0.4s ease;
+}
+
+input[type="text"]:not(:focus) ~ .lastname-label,
+input[type="email"]:not(:focus) ~ .email-label {
+  position: relative;
+  bottom: 54px;
+  transition: all 0.4s ease;
+}
+
+input[type="password"]:not(:focus) ~ .password-label {
+  position: relative;
+  bottom: 53px;
+  left: 38px;
+}
+
+.formheader {
+  margin: 20px auto 40px auto;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 78px;
+    width: 100px;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 6px;
+    bottom: 2px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    left: 9px;
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 30vh;
+    width: 40vw;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 6px;
+    bottom: 2px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    right: -8px;
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 30vh;
+    width: 40vw;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    right: -9px;
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 319px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 78px;
+    width: 100px;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+  }
+  .password-label {
+    position: relative;
+    right: -39px;
+    bottom: 111px;
+  }
+  input[type="password"]:not(:focus) ~ .password-label {
+    position: relative;
+    bottom: 53px;
+    left: 38px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    right: -5px;
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    margin: 20px auto;
+  }
+}

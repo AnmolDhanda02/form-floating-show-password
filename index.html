@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popupbox or Modals</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="popup-container">
+        <button type="submit" class="mybtn blurbg" onclick="successopenpopupbox()">success</button>
+        <div class="popupbox" id="successpopupbox">    
+            <img src="assets/images/ok.png" alt="popupimage" class="successpopupimage">
+            <h2>Success</h2>
+            <p class="popuptext">Your details has been successfully submitted</p>
+            <button class="successpopupbtn" onclick="successclosepopupbox()">ok</button>
+        </div>
+    </div>
+
+    <div class="popup-container">
+        <button type="submit" class="mybtn blurbg" onclick="failureopenpopupbox()">failure</button>
+        <div class="popupbox" id="failurepopupbox">    
+            <img src="assets/images/notok.png" alt="popupimage" class="failurepopupimage">
+            <h2>Failure</h2>
+            <p class="popuptext">Something went wrong please try again</p>
+            <button class="failurepopupbtn" onclick="failureclosepopupbox()">ok</button>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

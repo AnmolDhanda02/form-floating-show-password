@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #0073aa;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.forgotpasslink:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.formdesign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 21px -7px var(--primary-color);
+  padding: 0px 36px;
+  width: 60vw;
+  margin: 120px auto;
+}
+
+.formimage {
+  /* background-image: url("assets/images/loan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  height: 50vh;
+  width: 30vw;
+  margin: 50px 50px 50px 0px;
+}
+
+.formbtn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.formbtn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  transform: scale(1.1);
+  border: 1px solid var(--primary-color);
+}
+
+input {
+  height: 100% !important;
+  width: 100% !important;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 10px 42px;
+  resize: none;
+  margin-bottom: 18px;
+}
+
+.icons {
+  position: relative;
+  bottom: -36px;
+  right: -8px;
+  color: gray;
+  padding: 5px;
+}
+
+.passwordicons {
+  position: relative;
+  bottom: -35px;
+  right: -7px;
+  color: grey;
+  padding: 5px;
+}
+
+.email-label {
+  position: relative;
+  right: -39px;
+  bottom: 54px;
+}
+
+.password-label {
+  position: relative;
+  bottom: 52px;
+  left: 38px;
+}
+
+input:focus ~ .password-label,
+input:valid ~ .password-label {
+  position: relative !important;
+  bottom: 95px !important;
+  transition: all 0.4s ease;
+}
+
+.showhidepass {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+input[type="email"]:focus ~ .email-label,
+input[type="email"]:valid ~ .email-label {
+  position: relative;
+  bottom: 90px;
+  transition: all 0.4s ease;
+}
+
+input[type="password"]:not(:focus) ~ .password-label {
+  position: relative;
+  bottom: 52px;
+  left: 38px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.formheader {
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 78px;
+    width: 100px;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 6px;
+    bottom: 2px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    /* right: 53px; */
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 25vh;
+    width: 50vw;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 6px;
+    bottom: 2px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    /* right: 53px; */
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 30vh;
+    width: 40vw;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    /* right: 53px; */
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 319px) {
+  .formdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 21px -7px var(--primary-color);
+    padding: 34px 17px;
+    width: 90vw;
+    margin: 120px auto;
+  }
+  .formimage {
+    height: 78px;
+    width: 100px;
+    margin: 0px auto 17px auto;
+  }
+  .form-label {
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+  }
+  .password-label {
+    position: relative;
+    right: -39px;
+    bottom: 111px;
+  }
+  input[type="password"]:not(:focus) ~ .password-label {
+    position: relative;
+    bottom: 52px;
+    left: 38px;
+  }
+  .icons {
+    position: relative;
+    bottom: -36px;
+    right: -8px;
+    color: gray;
+    padding: 5px;
+  }
+  .passwordicons {
+    position: relative;
+    bottom: -35px;
+    /* right: 53px; */
+    color: grey;
+    padding: 5px;
+  }
+  .formheader {
+    text-align: center;
+  }
+}

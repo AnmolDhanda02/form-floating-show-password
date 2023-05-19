@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo Mono", monospace;
+}
+
+/* .popup-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c5077;
+} */
+
+.mybtn {
+    text-transform: uppercase;
+    background-color: #6CE679;
+    color: white;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.mybtn:hover {
+    background-color: white;
+    color: #6CE679;
+    font-weight: bold;
+}
+
+.blurbg.active {
+    filter: blur(5px);
+}
+
+.successpopupimage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: relative;
+  left: 5px;
+  bottom: 90px;
+}
+
+.failurepopupimage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: relative;
+  left: 5px;
+  bottom: 90px;
+}
+
+.popupbox {
+  width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  visibility: hidden;
+  padding: 34px;
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.successopenpopup {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 0px 21px 3px #6ce679;
+}
+
+.failureopenpopup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 0px 21px 3px #fd5c69;
+}
+
+.successpopupbtn {
+  background-color: #6ce679;
+  color: white;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+
+.failurepopupbtn {
+  background-color: #fd5c69;
+  color: white;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+
+.popuptext {
+  margin: 30px auto;
+}
+
+h2 {
+  margin-top: -89px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 320px) {
+  .popupbox {
+    width: 90vw;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    padding: 34px;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  .successopenpopup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 5px 21px -7px #6ce679;
+  }
+  .failureopenpopup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 5px 21px -7px #fd5c69;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .popupbox {
+    width: 90vw;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    padding: 34px;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  .successopenpopup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 5px 21px -7px #6ce679;
+  }
+  .failureopenpopup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 5px 21px -7px #fd5c69;    
+  }
+}
